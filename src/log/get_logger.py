@@ -36,6 +36,7 @@ class Logger:
         if is_true_like(os.environ.get("LOG_TRACE")):
             completeMsg = self.buildLogMsg("[ TRACE]", msg, jsonContext)
             if not extra:
+                # TODO: consider python logger here
                 print(completeMsg)
             else:
                 print(completeMsg, *extra)
