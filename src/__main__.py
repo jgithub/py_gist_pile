@@ -3,6 +3,7 @@ from date.date_provider_service_impl import DateProviderServiceImpl
 from greeting.greeting_provider_service import GreetingProviderService
 from greeting.greeting_provider_service_impl import GreetingProviderServiceImpl
 from log.get_logger import get_logger
+from log.log_util import d4l
 LOG = get_logger("main.py")
 
 
@@ -22,7 +23,7 @@ def main():
   # ----
   
   
-  LOG.notice(f"main(): I will greet you with: {greeting_provider_service.get_greeting()}")
+  LOG.notice(f"main(): I will greet you with: {d4l(greeting_provider_service.get_greeting())}")
   print(f"{greeting_provider_service.get_greeting()}")
 
 
