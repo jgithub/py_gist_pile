@@ -3,6 +3,7 @@ from datetime import datetime
 from date.date_provider_service import DateProviderService
 from greeting.greeting_provider_service import GreetingProviderService
 from log.get_logger import get_logger
+from log.log_util import d4l
 
 
 LOG = get_logger("greeting.GreetingProviderServiceImpl")
@@ -61,7 +62,7 @@ class GreetingProviderServiceImpl(GreetingProviderService):
     
     
     hour = now.hour
-    LOG.debug(f"The hour is {hour}")
+    LOG.debug(f"The hour is {d4l(hour)}")
     
     if hour < 12:
         return "morning"
