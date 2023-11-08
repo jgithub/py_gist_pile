@@ -1,5 +1,12 @@
 * https://stackoverflow.com/questions/1732438/how-do-i-run-all-python-unit-tests-in-a-directory
 
+* I personally use this in the Typescript world all the time: https://github.com/jgithub/ts-gist-pile/
+* This library is my first python attempt at a similar thing
+* Thus far is demonstrates "program to an interface" and dependency injection patterns that I am a huge fan ot
+* I assume that this is "not the Python way"
+* Much of what's in https://github.com/jgithub/ts-gist-pile/ is "not the javascript way" either but I think it's crazy valuable
+
+
 
 ```
 user@MacBook-Pro py-gist-pile % make test
