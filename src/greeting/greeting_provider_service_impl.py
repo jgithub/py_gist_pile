@@ -24,5 +24,5 @@ class GreetingProviderServiceImpl(GreetingProviderService):
 
 
   def get_greeting(self) -> str:
-    return f"Good {self._is_morning_afternoon_or_evening()}"
+    return f"Good {self._is_morning_afternoon_or_evening()}."
       

@@ -12,7 +12,7 @@ class TestGreetingProviderService(unittest.TestCase):
   def test_greeting_provider_service(self):
     date_provider_service: DateProviderService = DateProviderServiceAlwaysEpochImpl()
     greeting_provider_service = GreetingProviderServiceImpl(date_provider_service)
-    self.assertEqual(greeting_provider_service.get_greeting(), "Good morning")
+    self.assertEqual(greeting_provider_service.get_greeting(), "Good morning.")
 
 if __name__ == '__main__':
     unittest.main()

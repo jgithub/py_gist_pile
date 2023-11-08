@@ -5,3 +5,7 @@ ROOT_DIR:=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 test:
 #	cd ${ROOT_DIR} && python -m unittest test/date/date_provider_service_test.py
 	cd ${ROOT_DIR} && PYTHONPATH="./src:./src/date:./src/greeting" LOG_PREPEND_TIMESTAMP=1 LOG_DEBUG=1 python3 -m unittest discover -v
+
+.PHONY: run
+run:
+	cd ${ROOT_DIR} && PYTHONPATH="./src:./src/date:./src/greeting" LOG_PREPEND_TIMESTAMP=1 LOG_DEBUG=1 python3 src
