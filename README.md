@@ -5,11 +5,12 @@
 user@MacBook-Pro py-gist-pile % make test
 cd /Users/user/project/py-gist-pile && PYTHONPATH="./src:./src/date:./src/greeting" LOG_PREPEND_TIMESTAMP=1 LOG_DEBUG=1 python3 -m unittest discover -v
 test_does_this_work (test.date.test_date_provider_service.TestDateProvider.test_does_this_work) ... ok
-test_greeting_provider_service (test.greeting.test_greeting_provider_service.TestGreetingProviderService.test_greeting_provider_service) ... Wed, 08 Nov 2023 15:45:44 UTC [ DEBUG] greeting.GreetingProviderServiceImpl The hour is 1
+test_greeting_provider_service (test.greeting.test_greeting_provider_service.TestGreetingProviderService.test_greeting_provider_service) ... Wed, 08 Nov 2023 15:52:32 UTC [ DEBUG] greeting.GreetingProviderServiceImpl The hour is 1
 ok
+test_greeting_provider_service_agnostic_of_date (test.greeting.test_greeting_provider_service.TestGreetingProviderService.test_greeting_provider_service_agnostic_of_date) ... ok
 
 ----------------------------------------------------------------------
-Ran 2 tests in 0.001s
+Ran 3 tests in 0.001s
 
 OK
 user@MacBook-Pro py-gist-pile % make run
