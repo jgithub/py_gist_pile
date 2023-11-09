@@ -6,7 +6,7 @@
 * Thus far is demonstrates "program to an interface" and dependency injection patterns that I am a fan of
 * I assume that this is "not the Python way"
 * Much of what's in https://github.com/jgithub/ts-gist-pile/ is "not the javascript way" either but I think it's crazy valuable
-* py-gist-pile does not appear to be a Python project: no pyproject.toml or setup.py
+* TODO: solve this: "py-gist-pile does not appear to be a Python project: no pyproject.toml or setup.py"
 
 
 ```
