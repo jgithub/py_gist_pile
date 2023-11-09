@@ -4,11 +4,11 @@ from setuptools import setup
 REQUIRED_PACKAGES = [
 ]
 
-__version__ = v0.0.2
+__version__ = "v0.0.3"
 
 
 setup(
-    name="fh_timezone",
+    name="py-gist-pile",
     version=__version__,
     description="Kinda like ts-gist-pile, but for python",
     url="https://github.com/jgithub/py-gist-pile",
