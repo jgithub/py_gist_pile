@@ -1,17 +1,16 @@
-from setuptools import setup
-
+from setuptools import setup, find_packages
 
 REQUIRED_PACKAGES = [
 ]
 
-__version__ = "v0.0.3"
+__version__ = "v0.0.4"
 
 
 setup(
-    name="py-gist-pile",
+    name="py_gist_pile",
     version=__version__,
     description="Kinda like ts-gist-pile, but for python",
-    url="https://github.com/jgithub/py-gist-pile",
+    url="https://github.com/jgithub/py_gist_pile",
     author="jgithub",
     python_requires='>=3.10,<4',
     install_requires=REQUIRED_PACKAGES,
