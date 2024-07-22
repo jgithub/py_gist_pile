@@ -5,7 +5,6 @@ from llm.llm_q_and_a import LlmQAndA
 from dataclasses import dataclass
 
 
-
 @dataclass
 class LlmQuery:
     '''
