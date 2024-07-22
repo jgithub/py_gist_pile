@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "py_gist_pile"
-version = "v0.0.24"
+version = "v0.0.25"
 description = ""
 authors = ["jgithub <jgithub1@jeano.net>"]
 license = "MIT"
@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 ruff = "^0.5.4"
+pylint = "^3.2.6"
 
 
 [build-system]

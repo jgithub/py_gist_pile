@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from llm.llm_answer_meta import LlmAnswerMeta
+from llm_answer_meta import LlmAnswerMeta
 
 # class LlmQAndA(TypedDict):
 #     question: str   # This is populated in the query

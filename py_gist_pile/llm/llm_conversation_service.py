@@ -1,7 +1,6 @@
 from abc import ABC, abstractmethod
-import asyncio
-from llm.llm_query import LlmQuery
-from llm.llm_response import LlmResponse
+from llm_query import LlmQuery
+from llm_response import LlmResponse
 
 class LlmConversationService(ABC):
     @abstractmethod
