@@ -4,7 +4,6 @@ REQUIRED_PACKAGES = []
 
 __version__ = "v0.0.23"
 
-
 setup(
     name="py_gist_pile",
     version=__version__,
