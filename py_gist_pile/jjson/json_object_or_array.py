@@ -1,7 +1,7 @@
 from typing import Union
 
-from json_object import JsonObject
-from json_array import JsonArray
+from jjson.json_object import JsonObject
+from jjson.json_array import JsonArray
 
 
 # Define JsonObjectOrArray type

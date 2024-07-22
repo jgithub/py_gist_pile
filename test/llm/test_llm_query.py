@@ -5,7 +5,7 @@ from llm.llm_query import LlmQuery
 
 class TestLlmQuery(unittest.TestCase):
     def test_anemic(self):
-        llm_query = LlmQuery()
+        llm_query = LlmQuery(prompt="hello", additionalContext=None, qAndA=[])
 
 
 if __name__ == "__main__":
