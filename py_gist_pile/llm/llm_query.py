@@ -1,7 +1,7 @@
 from typing import List
 
 from jjson.json_object_or_array import JsonObjectOrArray
-from llm.llm_q_and_a import LlmQAndA
+from llm_q_and_a import LlmQAndA
 from dataclasses import dataclass
 
 @dataclass
