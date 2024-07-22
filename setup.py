@@ -2,7 +2,7 @@ from setuptools import setup
 
 REQUIRED_PACKAGES = []
 
-__version__ = "v0.0.20"
+__version__ = "v0.0.21"
 
 
 setup(
