@@ -1,8 +1,8 @@
 import unittest
-from llm_query import LlmQuery
+from py_gist_pile.llm.llm_query import LlmQuery
 from py_gist_pile.log.get_logger import get_logger
 from py_gist_pile.llm.llm_conversation_service import LlmConversationService
-from llm_response import LlmResponse
+from py_gist_pile.llm.llm_response import LlmResponse
 
 
 class TestLlmConversionService(unittest.TestCase):

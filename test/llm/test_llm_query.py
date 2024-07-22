@@ -1,5 +1,5 @@
 import unittest
-from llm.llm_query import LlmQuery
+from py_gist_pile.llm.llm_query import LlmQuery
 
 
 class TestLlmQuery(unittest.TestCase):
