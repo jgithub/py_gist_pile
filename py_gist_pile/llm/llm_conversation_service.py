@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
-from llm_query import LlmQuery
-from llm_response import LlmResponse
+from py_gist_pile.llm.llm_query import LlmQuery
+from py_gist_pile.llm.llm_response import LlmResponse
 
 class LlmConversationService(ABC):
     @abstractmethod
