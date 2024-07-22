@@ -1,6 +1,6 @@
 import unittest
 from boolean_util import is_truelike
-from llm_query import LlmQuery
+from llm.llm_query import LlmQuery
 
 
 class TestLlmQuery(unittest.TestCase):
