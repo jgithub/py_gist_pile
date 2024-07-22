@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "py-gist-pile"
+version = "0.1.0"
+description = ""
+authors = ["jgithub <jgithub1@jeano.net>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
