@@ -8,3 +8,7 @@ test:
 .PHONY: run
 run:
 	cd ${ROOT_DIR} && PYTHONPATH="./py_gist_pile:./py_gist_pile/date:./py_gist_pile/greeting" LOG_PREPEND_TIMESTAMP=1 LOG_DEBUG=1 python3 py_gist_pile
+
+.PHONY: lint 
+lint: 
+	poetry run ruff check

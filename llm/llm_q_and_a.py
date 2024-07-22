@@ -6,9 +6,10 @@ from llm.llm_answer_meta import LlmAnswerMeta
 #     question: str   # This is populated in the query
 #     answer: str     # Additionally, these are populated in the response
 #     answerMeta: LlmAnswerMeta
-    
+
+
 @dataclass
-class LlmQAndA():
-    question: str   # This is populated in the query
-    answer: str     # Additionally, these are populated in the response
+class LlmQAndA:
+    question: str  # This is populated in the query
+    answer: str  # Additionally, these are populated in the response
     answerMeta: LlmAnswerMeta
