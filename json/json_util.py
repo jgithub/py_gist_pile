@@ -1,5 +1,5 @@
 from copy import deepcopy
-from typing import Any, List, Dict, Union
+from typing import Any, List
 
 
 def recursively_filter_properties_in_place(

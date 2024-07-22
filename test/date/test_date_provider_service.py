@@ -1,4 +1,3 @@
-from abc import ABC, abstractmethod
 from date_provider_service_always_epoch_impl import DateProviderServiceAlwaysEpochImpl
 import os
 from datetime import datetime
@@ -10,7 +9,6 @@ import unittest
 # sys.path.append(path)
 # from ../../py_gist_pile2/date/date_provider_service import DateProviderService
 # from date_provider_service import DateProviderService
-from datetime import datetime
 
 
 class TestDateProvider(unittest.TestCase):

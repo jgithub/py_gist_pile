@@ -1,5 +1,3 @@
-from abc import ABC, abstractmethod
-from datetime import datetime
 from greeting.greeting_provider_service import GreetingProviderService
 from log.get_logger import get_logger
 
@@ -15,4 +13,4 @@ class GreetingProviderServiceTimeAgnosticImpl(GreetingProviderService):
         pass
 
     def get_greeting(self) -> str:
-        return f"Hello."
+        return "Hello."

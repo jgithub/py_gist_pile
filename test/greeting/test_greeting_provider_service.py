@@ -1,4 +1,3 @@
-from abc import ABC, abstractmethod
 from date_provider_service import DateProviderService
 from date_provider_service_always_epoch_impl import DateProviderServiceAlwaysEpochImpl
 from greeting.greeting_provider_service_time_agnostic_impl import (
@@ -6,7 +5,6 @@ from greeting.greeting_provider_service_time_agnostic_impl import (
 )
 from greeting_provider_service_impl import GreetingProviderServiceImpl
 import os
-from datetime import datetime
 
 os.environ["TZ"] = "Europe/London"
 

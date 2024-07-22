@@ -2,8 +2,9 @@ import unittest
 
 # sys.path.append(path)
 # from ../../py_gist_pile2/date/date_provider_service import DateProviderService
-from date_provider_service import DateProviderService
 from datetime import datetime
+
+from py_gist_pile.date.date_provider_service_impl import DateProviderServiceImpl
 
 
 class TestDateProvider(unittest.TestCase):

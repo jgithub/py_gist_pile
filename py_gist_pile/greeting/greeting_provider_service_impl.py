@@ -1,4 +1,3 @@
-from abc import ABC, abstractmethod
 from datetime import datetime
 from date.date_provider_service import DateProviderService
 from greeting.greeting_provider_service import GreetingProviderService
