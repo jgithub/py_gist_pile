@@ -10,5 +10,5 @@ class LlmQuery:
     Anemic LlmQuery model
     '''
     prompt: str
-    additionalContext: JsonObjectOrArray
-    qAndA: List[LlmQAndA]
+    additional_context: JsonObjectOrArray
+    q_and_a: List[LlmQAndA]
