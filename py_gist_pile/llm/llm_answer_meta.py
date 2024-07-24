@@ -1,5 +1,6 @@
-from typing import TypedDict
+from dataclasses import dataclass
+from typing import Optional
 
-
-class LlmAnswerMeta(TypedDict):
-    score: float  # A confidence score - number between 0 and 1
+@dataclass
+class LlmAnswerMeta():
+    score: Optional[float] = None  # A confidence score - number between 0 and 1
