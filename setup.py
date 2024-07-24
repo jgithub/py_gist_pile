@@ -2,7 +2,7 @@ from setuptools import setup
 
 REQUIRED_PACKAGES = []
 
-__version__ = "v0.0.29"
+__version__ = "v0.0.30"
 
 setup(
     name="py_gist_pile",
