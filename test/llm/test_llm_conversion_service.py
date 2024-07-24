@@ -8,7 +8,7 @@ from py_gist_pile.llm.llm_response import LlmResponse
 class TestLlmConversionService(unittest.TestCase):
     async def test_imports(self):
         llmConversationService: LlmConversationService = FakeiLlmConversationServiceImpl()
-        llm_query = LlmQuery(prompt="hello", additionalContext=None, qAndA=[])
+        llm_query = LlmQuery(prompt="hello", additional_context=None, q_and_a=[])
         self.assertEqual(llm_query.prompt, "hello")
         response = await llmConversationService.ask_query(LlmQuery())
         self.assertEqual(response.rootResponseText, "hello")

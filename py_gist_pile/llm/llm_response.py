@@ -8,4 +8,4 @@ from py_gist_pile.llm.llm_q_and_a import LlmQAndA
 class LlmResponse:
     rootResponseText: Optional[str] = None
     rootResponseJson: Optional[JsonObjectOrArray] = None
-    qAndA: Optional[List[LlmQAndA]] = None
+    q_and_a: Optional[List[LlmQAndA]] = None
