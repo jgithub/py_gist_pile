@@ -1,8 +1,10 @@
 import datetime
 import json
+import re
+from typing import Pattern
 
 
-def d4l(input):
+def d4l(input: any):
     """decorate-for-logging"""
 
     if input is None:
@@ -46,3 +48,61 @@ def d4l(input):
         return input.isoformat()
 
     return str(input)
+
+
+def d4l_secret(obj: any):
+    working_d4l = d4l(obj)
+
+    if working_d4l == '<undefined> (undefined)':
+        return "<*********> (*********)"
+    if working_d4l == '<null> (null)':
+        return '<****> (****)'
+    if working_d4l == "'' (string)":
+        return "/^$/"
+
+
+    typeof_orig = ""
+
+    if isinstance(working_d4l, str):
+        pattern: Pattern = ' \(string, \d+\)$'
+        match: Match = re.search(pattern, working_d4l)
+
+        if (match != None):
+            working_d4l = re.sub(pattern, "", working_d4l)
+            typeof_orig = "string"
+        elif working_d4l.endswith(' (string)'):
+            working_d4l = working_d4l[:-10]
+            working_d4l = working_d4l.lstrip("'").rstrip("'")
+            typeof_orig = "string"
+        elif working_d4l.endswith(' (number)'):
+            working_d4l = working_d4l[:-10]
+            typeof_orig = "number"
+
+        # Redeclare
+        pattern: Pattern = "^\'(.*)\'$"
+        # print(f"working_d4l = {working_d4l}")
+        match: Match = re.search(pattern, working_d4l)
+        if (match != None):
+            # print(f"MATCH")
+            working_d4l = match.group(1)
+            # print(f"working_d4l = {working_d4l}")
+
+        real_length = len(working_d4l)
+        # print(f"real_length = {real_length}")
+
+
+        quote = "'" if typeof_orig == 'string' else ""
+
+        if len(working_d4l) > 8:
+            first_few = working_d4l[:2]
+            last_few = working_d4l[-2:]
+            working_d4l = f"{quote}{first_few}...{last_few}{quote} ({'string, ' if typeof_orig == 'string' else ''}{real_length})"
+        elif len(working_d4l) > 6:
+            first_few = working_d4l[:1]
+            last_few = working_d4l[-1:]
+            working_d4l = f"{quote}{first_few}...{last_few}{quote} ({'string, ' if typeof_orig == 'string' else ''}{real_length})"
+        else:
+            first_char = working_d4l[:1]
+            working_d4l = f"{quote}{first_char}...{quote} ({'string, ' if typeof_orig == 'string' else ''}{real_length})"
+
+    return working_d4l
