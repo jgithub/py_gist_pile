@@ -1,7 +1,7 @@
 import datetime
 import json
 import re
-from typing import Pattern
+from typing import Pattern, Match
 
 
 def d4l(input: any):
@@ -67,7 +67,7 @@ def d4l_secret(obj: any):
         pattern: Pattern = ' \(string, \d+\)$'
         match: Match = re.search(pattern, working_d4l)
 
-        if (match != None):
+        if (match is not None):
             working_d4l = re.sub(pattern, "", working_d4l)
             typeof_orig = "string"
         elif working_d4l.endswith(' (string)'):
@@ -82,7 +82,7 @@ def d4l_secret(obj: any):
         pattern: Pattern = "^\'(.*)\'$"
         # print(f"working_d4l = {working_d4l}")
         match: Match = re.search(pattern, working_d4l)
-        if (match != None):
+        if (match is not None):
             # print(f"MATCH")
             working_d4l = match.group(1)
             # print(f"working_d4l = {working_d4l}")
